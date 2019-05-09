@@ -1,7 +1,11 @@
+from time_benchmark import benchmark
+
+
 def is_multiple_of_3_and_5(num) -> bool:
     return num % 15 == 0
 
 
+@benchmark
 def main():
     sum = calculate_sum()
     print(f"sum = {sum}")
