@@ -30,7 +30,6 @@ def main():
     products = {}
     for col_nr in range(0, len(grid[0])):
         for row_nr in range(0, len(grid[:, 0])):
-            print(col_nr, row_nr)
             right, vals = right_side(grid, [row_nr, col_nr])
             products[right] = vals
             right_down, vals = right_down_side(grid, [row_nr, col_nr])
